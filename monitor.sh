@@ -1,5 +1,5 @@
 system_health_check() {
-    echo "System Health Check"
+    echo "🔍 System Health Check"
 
     echo -e "\n📦 Checking for system updates..."
     sudo apt update -qq
@@ -11,3 +11,6 @@ system_health_check() {
     echo -e "\n🧠 Checking memory usage..."
     free -h
 }
+
+# Call the function
+system_health_check
